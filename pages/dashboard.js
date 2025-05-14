@@ -10,7 +10,6 @@ export default function Dashboard() {
     <div className="p-6 space-y-6">
       <h1 className="text-2xl font-bold">Flyash Delivery Dashboard (Live Preview)</h1>
 
-
       {/* Dashboard Summary Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         <div className="p-4 bg-gray-100 rounded-xl shadow">Today's Deliveries: <b>4</b></div>
