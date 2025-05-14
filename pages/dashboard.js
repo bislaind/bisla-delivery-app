@@ -20,7 +20,7 @@ export default function Dashboard() {
 
       {/* Toggle Start Trip Form */}
       <Button className="mt-4" onClick={() => setShowForm(!showForm)}>
-        ➕ Start New Trip
+        🚛 Add New Trip
       </Button>
 
       {showForm && (
