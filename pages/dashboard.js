@@ -32,9 +32,9 @@ export default function Dashboard() {
             <div><Label>Company</Label><Input placeholder="Select Company from Master" /></div>
             <div><Label>Vehicle Number</Label><Input placeholder="HR55AB1234" /></div>
             <div><Label>Source (Thermal)</Label><Input placeholder="Select Source from Master" /></div>
-            <div><Label>Source Weight (MT)</Label><Input type="number" /></div>
+            <div><Label>Source Weight (MT)</Label><Input type="number" step="0.01" /></div>
             <div><Label>Party</Label><Input placeholder="Select Party from Master" /></div>
-            <div><Label>Challan Weight (MT)</Label><Input type="number" /></div>
+            <div><Label>Challan Weight (MT)</Label><Input type="number" step="0.01" /></div>
             <div><Label>Driver Name</Label><Input placeholder="Select Driver from Master" /></div>
             <div><Label>Fuel Given (₹)</Label><Input type="number" /></div>
             <div><Label>Cash Given (₹)</Label><Input type="number" /></div>
