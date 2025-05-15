@@ -24,8 +24,8 @@ export default function Dashboard() {
       </Button>
 
       {showForm && (
-        <div className="mt-6 p-6 border rounded-xl bg-white shadow">
-          <h2 className="text-xl font-semibold mb-4">Start New Trip - Step 1</h2>
+        <div className="mt-6 bg-white border rounded-xl shadow p-6">
+          <h2 className="text-xl font-semibold mb-4">Start New Trip – Step 1</h2>
           <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div><Label>Challan Number</Label><Input placeholder="Enter Challan Number" /></div>
             <div><Label>Challan Date</Label><Input type="date" /></div>
@@ -36,8 +36,8 @@ export default function Dashboard() {
             <div><Label>Party</Label><Input placeholder="Select Party from Master" /></div>
             <div><Label>Challan Weight (MT)</Label><Input type="number" step="0.01" /></div>
             <div><Label>Driver Name</Label><Input placeholder="Select Driver from Master" /></div>
-            <div><Label>Fuel Given (₹)</Label><Input type="number" /></div>
-            <div><Label>Cash Given (₹)</Label><Input type="number" /></div>
+            <div><Label>Fuel Given (₹)</Label><Input type="number" step="0.01" /></div>
+            <div><Label>Cash Given (₹)</Label><Input type="number" step="0.01" /></div>
 
             <div className="col-span-full text-right">
               <Button type="submit">Save & Move to Delivery Pending</Button>
