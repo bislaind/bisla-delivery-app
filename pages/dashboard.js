@@ -79,6 +79,8 @@ export default function Dashboard() {
         </button>
       </div>
     </form>
-  </div>
-)}
+     </div>
+  );
+}
+
 
