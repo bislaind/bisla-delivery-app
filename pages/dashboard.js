@@ -1,8 +1,8 @@
 // Triggering redeploy
 import React, { useState } from "react";
-import { Input } from "../components/input";
-import { Button } from "../components/button";
-import { Label } from "../components/label";
+import { Input } from "../components/Input";
+import { Button } from "../components/Button";
+import { Label } from "../components/Label";
 
 export default function Dashboard() {
   const [showForm, setShowForm] = useState(false);
