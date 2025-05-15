@@ -1,3 +1,4 @@
+import Link from "next/link"; 
 import React, { useState } from "react";
 import { Input } from "../components/Input";
 import { Button } from "../components/Button";
@@ -22,6 +23,10 @@ export default function Dashboard() {
       <Button className="mt-4" onClick={() => setShowForm(!showForm)}>
         🚛 Add New Trip
       </Button>
+ <Link href="/delivery-pending" className="text-blue-600 hover:underline flex items-center gap-1">
+    📦 View Pending Deliveries
+  </Link>
+</div>
 
      {showForm && (
   <div className="mt-6 bg-white border rounded-xl shadow p-6">
