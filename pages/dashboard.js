@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
+import { Input } from "../components/input";
+import { Button } from "../components/button";
+import { Label } from "../components/label";
 
 export default function Dashboard() {
   const [showForm, setShowForm] = useState(false);
