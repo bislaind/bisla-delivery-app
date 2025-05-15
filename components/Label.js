@@ -1,3 +1,7 @@
-export function Label({ children }) {
-  return <label className="block mb-1 font-medium">{children}</label>;
+export default function Label({ children, ...props }) {
+  return (
+    <label {...props} className="block font-medium text-sm text-gray-700 mb-1">
+      {children}
+    </label>
+  );
 }
