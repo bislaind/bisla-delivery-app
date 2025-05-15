@@ -1,3 +1,3 @@
 export function Label({ children }) {
-  return <label className="block font-medium mb-1">{children}</label>;
+  return <label className="block mb-1 font-medium">{children}</label>;
 }
