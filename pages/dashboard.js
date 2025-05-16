@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+""import React, { useState } from "react";
 import Input from "../components/Input";
 import Button from "../components/Button";
 import Label from "../components/Label";
@@ -8,7 +8,7 @@ export default function Dashboard() {
   const [showForm, setShowForm] = useState(false);
 
   return (
-    <div className="p-6 space-y-6 max-w-5xl mx-auto">
+    <div className="p-6 space-y-6">
       <h1 className="text-2xl font-bold">Flyash Delivery Dashboard</h1>
 
       {/* Summary Boxes */}
@@ -23,7 +23,10 @@ export default function Dashboard() {
       <div className="flex gap-4 mt-4">
         <Button onClick={() => setShowForm(!showForm)}>➕ Start New Trip</Button>
         <Link href="/delivery-pending">
-          <Button className="bg-yellow-500 hover:bg-yellow-600">📋 Delivery Pending</Button>
+          <Button className="bg-blue-500 hover:bg-blue-600">📋 Delivery Pending</Button>
+        </Link>
+        <Link href="/invoicing">
+          <Button className="bg-yellow-500 hover:bg-yellow-600">🧾 Pending Invoices</Button>
         </Link>
       </div>
 
@@ -31,7 +34,7 @@ export default function Dashboard() {
       {showForm && (
         <div className="mt-6 bg-white border rounded-xl shadow p-6">
           <h2 className="text-xl font-semibold mb-6">Start New Trip – Step 1</h2>
-          <form className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
+          <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <Label>Challan Number</Label>
               <Input placeholder="Enter Challan Number" />
@@ -77,8 +80,8 @@ export default function Dashboard() {
               <Input type="number" step="0.01" />
             </div>
 
-            <div className="col-span-full text-right mt-6">
-              <Button type="submit" className="bg-green-600 hover:bg-green-700 px-6 py-2">
+            <div className="col-span-full text-right mt-4">
+              <Button type="submit" className="bg-green-600 hover:bg-green-700">
                 ✅ Save & Move to Delivery Pending
               </Button>
             </div>
