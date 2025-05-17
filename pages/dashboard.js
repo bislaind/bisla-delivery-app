@@ -19,14 +19,11 @@ export default function Dashboard() {
         <div className="p-4 bg-green-100 rounded shadow">Completed: <b>25</b></div>
       </div>
 
-      {/* Action Buttons */}
+      {/* Buttons */}
       <div className="flex gap-4 mt-4">
         <Button onClick={() => setShowForm(!showForm)}>➕ Start New Trip</Button>
         <Link href="/delivery-pending">
-          <Button className="bg-blue-500 hover:bg-blue-600">📋 Delivery Pending</Button>
-        </Link>
-        <Link href="/invoicing">
-          <Button className="bg-yellow-500 hover:bg-yellow-600">🧾 Pending Invoices</Button>
+          <Button className="bg-yellow-500 hover:bg-yellow-600">📋 Delivery Pending</Button>
         </Link>
       </div>
 
@@ -78,6 +75,10 @@ export default function Dashboard() {
             <div>
               <Label>Cash Given (₹)</Label>
               <Input type="number" step="0.01" />
+            </div>
+            <div>
+              <Label>Trip Amount (₹)</Label>
+              <Input type="number" step="0.01" placeholder="Enter trip amount" />
             </div>
 
             <div className="col-span-full text-right mt-4">
